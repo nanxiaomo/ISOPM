@@ -10,9 +10,7 @@
   <div class="weather-forecast" v-for="item in forecastWeather">
     <div class="weather-cell">
       <div class="weather-bd">{{item.data}}</div>
-        <div class="weather-hd">
-          <i class="tq"></i>
-        </div>
+        <div class="weather-hd" v-bind:class="item.icon"></div>
       <div class="weather-ft">{{item.temp_max}} / {{item.temp_min}}</div>
     </div>
   </div>
@@ -52,7 +50,7 @@
           data = wlist.dt_txt.slice(5, 10)
           tempMin = this.tempconversion(wlist.main.temp_min)
           tempMax = this.tempconversion(wlist.main.temp_max)
-          icon = wlist.weather.icon
+          icon = 't' + wlist.weather[0].icon.slice(0, 2) + 'd'
           weather = {
             'data': data,
             'icon': icon,
@@ -93,6 +91,7 @@
 
 </script>
 <style scoped>
+import 
   .weather {
     width: 200px;
     height: auto;
@@ -147,7 +146,8 @@
   }
   .weather-bd, .weather-hd,.weather-ft{
     float: left;
-    display: inline-block;
+    display: flex;
+    display: -webkit-flex;
   }
   .weather-ft{
     float: right;
@@ -155,5 +155,15 @@
   .weather-hd {
     margin-left: 30px;
   }
-
+  .weather-hd {
+    background-color: rgba(100, 100, 100, 0.1);
+    background-position: center center;
+    width: 1.5rem !important;
+    height: 1.5rem;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+  }
 </style>

@@ -3,30 +3,30 @@
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
-.t01n {
+.t01d {
   background-image: url("../images/weather/01d.png");
 }
-.t02n {
+.t02d {
   background-image: url("../images/weather/02d.png");
 }
-.t03n {
+.t03d {
   background-image: url("../images/weather/03d.png");
 }
-.t04n {
+.t04d {
   background-image: url("../images/weather/04d.png");
 }
-.t09n {
+.t09d {
   background-image: url("../images/weather/09d.png");
 }
-.t10n {
-  background-image: url("../images/weather10d.png");
+.t10d {
+  background-image: url("../images/weather/10d.png");
 }
-.t11n {
+.t11d {
   background-image: url("../images/weather/11d.png");
 }
-.t13n {
+.t13d {
   background-image: url("../images/weather/13d.png");
 }
-.t15n {
-  background-image: url("../images/weather/15d.png");
+.t50d {
+  background-image: url("../images/weather/50d.png");
 }
