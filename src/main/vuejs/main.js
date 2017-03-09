@@ -6,6 +6,7 @@ import App from './App'
 import router from './router'
 Vue.use(vueResource)
 require('./assets/css/weather.css')
+require('./assets/css/reset.css')
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
