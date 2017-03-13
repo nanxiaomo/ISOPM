@@ -4,7 +4,12 @@ import Vue from 'vue'
 import vueResource from 'vue-resource'
 import App from './App'
 import router from './router'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-default/index.css'
+
 Vue.use(vueResource)
+Vue.use(ElementUI)
+require('./assets/fonts/iconfont.css')
 require('./assets/css/weather.css')
 require('./assets/css/reset.css')
 /* eslint-disable no-new */
