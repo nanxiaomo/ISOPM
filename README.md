@@ -26,7 +26,8 @@ npm run dev
            |--service
            |--Applition.java
       |--resourse                    //资源目录
-         |--static                   // webpack 编译后的文件                   
+         |--static                   // webpack 编译后的文件
+         |--application.properties   // spring boot配置文件                
       |--vuejs                       //vue 前端代码
          |--assets                   //css js img 资源
          |--copmonents               // 组件
