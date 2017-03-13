@@ -19,7 +19,14 @@ npm run dev
 |-- src                              // 代码目录
    |--main                           // 源码
       |--java                        //java 资源
+        |--jp.co.ucl.ISOPM
+           |--api                     
+           |--dao
+           |--entity
+           |--service
+           |--Applition.java
       |--resourse                    //资源目录
+         |--static                   // webpack 编译后的文件                   
       |--vuejs                       //vue 前端代码
          |--assets                   //css js img 资源
          |--copmonents               // 组件
