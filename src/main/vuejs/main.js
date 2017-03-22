@@ -6,12 +6,12 @@ import App from './App'
 import router from './router'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
-import 'assets/fonts/iconfont.ttf'
 Vue.use(vueResource)
 Vue.use(ElementUI)
 require('assets/css/weather.css')
 require('assets/css/reset.css')
 require('assets/css/common.css')
+require('assets/fonts/iconfont.css')
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
