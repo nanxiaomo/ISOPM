@@ -91,7 +91,6 @@
 
 </script>
 <style scoped>
-import 
   .weather {
     width: 200px;
     height: auto;
