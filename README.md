@@ -1,7 +1,7 @@
 # ISOPM
 ## 项目目前用的技术
 1. 前端
-   vue2+vue-router+vue-resouce
+   vue2+vue-router+vue-resouce+element
 2. 后端
   springboot
 
@@ -20,11 +20,10 @@ npm run dev
    |--main                           // 源码
       |--java                        //java 资源
         |--jp.co.ucl.ISOPM
-           |--api                     
-           |--dao
-           |--entity
-           |--service
-           |--Applition.java
+          |--Application.java          // 主函数
+          |--api                       //相当于controller 控制器 
+          |--dao                       //数据访问层 
+          |--entity                    // 实体类
       |--resourse                    //资源目录
          |--static                   // webpack 编译后的文件
          |--application.properties   // spring boot配置文件                
