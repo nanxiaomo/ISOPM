@@ -49,9 +49,9 @@
   .leftbar {
     background: none repeat scroll 0 0 #FFFFFF;
     border-right: 1px solid #C8C7C7;
-    float: left;
     height: auto !important;
     height:800px;
+    float: left;
     min-height: 800px;
     padding:0 10px;
     width: 220px;
