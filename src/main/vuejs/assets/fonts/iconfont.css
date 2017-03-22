@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1489393422000'); /* IE9*/
-  src: url('iconfont.eot?t=1489393422000#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1489393422000') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1489393422000') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1489393422000#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1490163972074'); /* IE9*/
+  src: url('iconfont.eot?t=1490163972074#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1490163972074') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1490163972074') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1490163972074#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -18,4 +18,8 @@
 .icon-mima:before { content: "\e61d"; }
 
 .icon-guanjiaowangtubiao01:before { content: "\e615"; }
+
+.icon-kuaisu:before { content: "\e600"; }
+
+.icon-huanying:before { content: "\e602"; }
 

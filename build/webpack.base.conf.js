@@ -12,16 +12,16 @@ module.exports = {
     app: './src/main/vuejs/main.js'
   },
   output: {
-	 path: config.build.assetsRoot,
-	 filename: '[name].js',
-	 publicPath: process.env.NODE_ENV === 'production'
+   path: config.build.assetsRoot,
+   filename: '[name].js',
+   publicPath: process.env.NODE_ENV === 'production'
      ? config.build.assetsPublicPath
      : config.dev.assetsPublicPath
-   
+
      /*
       *  path: config.build.assetsRoot,publicPath: process.env.NODE_ENV === 'production'
       ? config.build.assetsPublicPath
-      : config.dev.assetsPublicPath*/
+      : config.dev.assetsPublicPath */
   },
   resolve: {
     extensions: ['.js', '.vue', '.json'],
@@ -41,7 +41,7 @@ module.exports = {
       {
         test: /\.(js|vue)$/,
         loader: 'eslint-loader',
-        enforce: "pre",
+        enforce: 'pre',
         include: [resolve('src'), resolve('test')],
         options: {
           formatter: require('eslint-friendly-formatter')
