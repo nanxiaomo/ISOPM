@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import home from '../pages/home/home'
-import login from '../pages/login/login'
-import slide from 'components/slide/slide'
+import home from 'pages/home/home'
+import login from 'pages/login/login'
+import staff from 'pages/staff/staff'
+import post from 'pages/staff/post'
 Vue.use(Router)
 
 const router = new Router({
@@ -14,15 +15,22 @@ const router = new Router({
       component: home
     },
     {
-      path: '/slide',
-      name: 'slide',
-      component: slide
-    },
-    {
       path: '/login',
       name: 'login',
       title: '登录',
       component: login
+    },
+    {
+      path: '/staff',
+      name: 'staff',
+      title: '人员信息管理',
+      component: staff,
+      children: [
+        {
+          path: 'post',
+          component: post
+        }
+      ]
     }
   ]
 })
