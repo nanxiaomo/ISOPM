@@ -1,7 +1,7 @@
 <template>
   <div id="vcom-calendar" class="vcom-calendar">
-    <div class="header">
-      <div class="head">
+    <div class="caheader">
+      <div class="cahead">
         {{ year }} - {{ month }} - {{ currentDay }}
       </div>
       <div class="weeks">
@@ -36,11 +36,11 @@
     -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
   }
-  .vcom-calendar .header {
+  .vcom-calendar .caheader {
     width: 100%;
     background-color: #2ecc71;
   }
-  .vcom-calendar .head {
+  .vcom-calendar .cahead {
     text-align: center;
     font-size: 15px;
     padding: 5px 0;

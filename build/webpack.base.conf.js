@@ -12,9 +12,9 @@ module.exports = {
     app: './src/main/vuejs/main.js'
   },
   output: {
-   path: config.build.assetsRoot,
-   filename: '[name].js',
-   publicPath: process.env.NODE_ENV === 'production'
+    path: config.build.assetsRoot,
+    filename: '[name].js',
+    publicPath: process.env.NODE_ENV === 'production'
      ? config.build.assetsPublicPath
      : config.dev.assetsPublicPath
 
@@ -33,7 +33,8 @@ module.exports = {
       'vue$': 'vue/dist/vue.common.js',
       'src': resolve('/src/main/vuejs'),
       'assets': resolve('/src/main/vuejs/assets'),
-      'components': resolve('/src/main/vuejs/components')
+      'components': resolve('/src/main/vuejs/components'),
+      'pages': resolve('/src/main/vuejs/pages')
     }
   },
   module: {

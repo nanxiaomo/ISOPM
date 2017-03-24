@@ -34,7 +34,7 @@
   </div>
 </template>
 <script type="text/javascript">
-  import calendar from 'components/slide/Calendar'
+  import calendar from 'components/slide/calendar'
   import weather from 'components/slide/weather'
 
   export default {

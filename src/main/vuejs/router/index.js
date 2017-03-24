@@ -1,8 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import home from '../pages/home/home'
-import login from '../pages/login/login'
-import slide from 'components/slide/slide'
+
+
+
+import home from 'pages/home/home'
+import login from 'pages/login/login'
+import staff from 'pages/staff/staff'
+import post from 'pages/staff/post'
+import pindex from 'pages/home/index'
 import caseTable from '../pages/caseManagement/caseManagement'
 Vue.use(Router)
 
@@ -12,12 +17,25 @@ const router = new Router({
       path: '/',
       name: 'home',
       title: '主页',
-      component: home
-    },
-    {
-      path: '/slide',
-      name: 'slide',
-      component: slide
+      component: home,
+      children: [
+        {
+          path: '',
+          component: pindex
+        },
+        {
+          path: 'staff',
+          name: 'staff',
+          title: '人员信息管理',
+          component: staff,
+          children: [
+            {
+              path: 'post',
+              component: post
+            }
+          ]
+        }
+      ]
     },
     {
       path: '/case',
