@@ -4,7 +4,6 @@
  -->
  <template>
     <div class="footer">
-      作者： 王菲
     </div>
   
  </template>

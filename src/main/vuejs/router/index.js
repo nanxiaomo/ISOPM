@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import home from '../pages/home/home'
 import login from '../pages/login/login'
 import slide from 'components/slide/slide'
+import caseTable from '../pages/caseManagement/caseManagement'
 Vue.use(Router)
 
 const router = new Router({
@@ -17,6 +18,12 @@ const router = new Router({
       path: '/slide',
       name: 'slide',
       component: slide
+    },
+    {
+      path: '/case',
+      name: 'caseManagement',
+      title: '人员案件管理',
+      component: caseTable
     },
     {
       path: '/login',
