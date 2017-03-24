@@ -6,3 +6,5 @@ target/
 .idea/
 .settings/
 .iml
+article/
+src/resources/static
