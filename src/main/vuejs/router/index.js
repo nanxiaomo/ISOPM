@@ -7,6 +7,9 @@ import staff from 'pages/staff/staff'
 import post from 'pages/staff/post'
 import pindex from 'pages/home/index'
 import caseTable from 'pages/caseManagement/caseManagement'
+import company from 'pages/companyall/companypage'
+import companyAdd from 'pages/companyall/companyadd'
+import companyCheck from 'pages/companyall/companycheck'
 Vue.use(Router)
 
 const router = new Router({
@@ -38,10 +41,27 @@ const router = new Router({
           name: 'caseManagement',
           title: '人员案件管理',
           component: caseTable
+        },
+        {
+          path: 'company',
+          name: 'companyall',
+          title: '公司信息管理',
+          component: company
+        },
+        {
+          path: 'company/add',
+          name: 'companyadd',
+          title: '新增公司',
+          component: companyAdd
+        },
+        {
+          path: 'company/check',
+          name: 'companycheck',
+          title: '查看公司',
+          component: companyCheck
         }
       ]
     },
-
     {
       path: '/login',
       name: 'login',
