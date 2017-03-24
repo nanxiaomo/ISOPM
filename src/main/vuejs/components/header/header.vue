@@ -7,7 +7,7 @@
       <div class="logo"></div>
       <ul>
         <li><router-link to="/">首页</router-link></li>
-        <li><a href="">案件管理</a></li>
+        <li><router-link to="/case">案件管理</router-link></li>
         <li><a v-link="{ path: '/staff' }">人员案件管理</a></li>
         <li><a v-link="{ path: '/login' }">营业额报表管理</a></li>
         <li><router-link to="/staff">人员信息管理</router-link></li>
