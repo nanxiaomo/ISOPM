@@ -1,14 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-
-
 import home from 'pages/home/home'
 import login from 'pages/login/login'
 import staff from 'pages/staff/staff'
 import post from 'pages/staff/post'
 import pindex from 'pages/home/index'
-import caseTable from '../pages/caseManagement/caseManagement'
+import caseTable from 'pages/caseManagement/caseManagement'
 Vue.use(Router)
 
 const router = new Router({
@@ -34,15 +32,16 @@ const router = new Router({
               component: post
             }
           ]
+        },
+        {
+          path: 'case',
+          name: 'caseManagement',
+          title: '人员案件管理',
+          component: caseTable
         }
       ]
     },
-    {
-      path: '/case',
-      name: 'caseManagement',
-      title: '人员案件管理',
-      component: caseTable
-    },
+
     {
       path: '/login',
       name: 'login',
