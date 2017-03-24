@@ -1,14 +1,15 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import home from '../pages/home/home'
-import login from '../pages/login/login'
-import staff from '../pages/staff/staff'
-import post from '../pages/staff/post'
-import pindex from '../pages/home/index'
-import company from '../pages/companyall/companypage'
-import companyAdd from '../pages/companyall/companyadd'
-import companyCheck from '../pages/companyall/companycheck'
+import home from 'pages/home/home'		
+import login from 'pages/login/login'		
+import staff from 'pages/staff/staff'		
+import post from 'pages/staff/post'		
+import pindex from 'pages/home/index'		
+import caseTable from 'pages/caseManagement/caseManagement'
+import company from 'pages/companyall/companypage'
+import companyAdd from 'pages/companyall/companyadd'
+import companyCheck from 'pages/companyall/companycheck'
 
 Vue.use(Router)
 
