@@ -54,6 +54,12 @@ const router = new Router({
           name: 'companycheck',
           title: '查看公司',
           component: companyCheck
+        }，
+        {
+          path: '/case',		
+          name: 'caseManagement',		
+          title: '人员案件管理',		
+          component: caseTable		
         }
       ]
     },
