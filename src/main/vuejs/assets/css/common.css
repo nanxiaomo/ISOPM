@@ -1,5 +1,56 @@
 /*页面主要部分的样式 */
 .container {
-	width: auto;
-	margin-left: 220px;
+  width: auto;
+  margin-left: 220px;
+}
+.breadcrumb {
+  list-style: none;
+  width: 100%;
+  background-color: #E3E3E3;
+  height: 30px;
+  padding-top: 5px;
+}
+.breadcrumb li a {
+  float: left;
+  margin-right: 20px;
+  display: inline-block;
+  position: relative;
+  height: 20px;
+  padding: 10px 15px 0 15px;
+  text-align: center;
+  background-color: #3498db;
+  color: #fff;
+  line-height: 15px;
+}
+.breadcrumb li a:after{
+  content: "";
+  border-left: 15px solid #3498db;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  position: absolute;
+  right: -15px;
+  top: 0;
+}
+.breadcrumb li a:before{
+  content: "";
+  border-top: 15px solid #3498db;
+  border-bottom: 15px solid #3498db; 
+  border-left: 15px solid transparent;
+  position: absolute;
+  top: 0;
+  left: -15px;
+}
+.breadcrumb li:first-child a{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.breadcrumb li:first-child a:before{
+  display: none;
+}
+.breadcrumb li:last-child a{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.breadcrumb li:last-child a:after{
+  display: none;
 }
