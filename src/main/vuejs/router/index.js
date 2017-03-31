@@ -31,7 +31,7 @@ const router = new Router({
           component: staff,
           children: [
             {
-              path: 'post',
+              path: '/post',
               component: post
             }
           ]
