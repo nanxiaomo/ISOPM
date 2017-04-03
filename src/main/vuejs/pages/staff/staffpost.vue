@@ -1,6 +1,8 @@
 <template>
-  <div class="user-posts">
-    <h2>user posts</h2>
+  <div class="userposts">
+    <div class="container">
+    zhehsi
+    </div>
   </div>
 </template>
 <script type="text/javascript">
