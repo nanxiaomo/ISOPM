@@ -27,27 +27,14 @@
               <el-button type="primary" @click="onSubmit">查询</el-button>
             </el-form-item>
           </el-form> 
-           <a href="" class="buttonc">
-            <div class="create">
-              <i class="iconfont icon-addstaff"></i>
-              <p>添加</p>
-            </div>
-          </a>
+          <el-button type="primary" class="buttonc" @click="dialogFormVisible =!dialogFormVisible"><i class="iconfont icon-addstaff"></i> 添加新公司信息</el-button>
+          <staffpost :show = "dialogFormVisible" v-on:display="displaydiolog"></staffpost>
         </div>
         <div class="function">
           <ul>
-            <li>
-              <i class="iconfont icon-print"></i>
-              打印
-            </li>
-            <li>
-              <i class="iconfont icon-export"></i>
-              导出数据
-            </li>
-            <li>
-              <i class="iconfont icon-renovate"></i>
-              刷新
-            </li>
+            <li><i class="iconfont icon-print"></i>打印</li>
+            <li><i class="iconfont icon-export"></i>导出数据</li>
+            <li><i class="iconfont icon-renovate"></i>刷新</li>
           </ul>
         </div>
        
@@ -80,18 +67,20 @@
 </template>
 <script type="text/javascript">
   import { breadcrumb, breadcrumbitem } from 'components/breadcrumb'
+  import staffpost from 'pages/staff/staffpost'
   const ERR_OK = 0
   export default {
     components: {
       breadcrumb,
-      breadcrumbitem
+      breadcrumbitem,
+      staffpost
     },
     data() {
       return {
         stafftable: [],
         internalPageSize: 10, // 每页数据个数
-        currentPage: 1        // 当前页数
-
+        currentPage: 1, // 当前页数
+        dialogFormVisible: false
       }
     },
     methods: {
@@ -103,8 +92,10 @@
       },
       handleCurrentChange(val) { // 获取当前页
         this.currentPage = val
+      },
+      displaydiolog() {
+        this.dialogFormVisible = false
       }
-
     },
     computed: {
       total() {
@@ -195,10 +186,7 @@
   .buttonc {
     float: right;
     margin-right: 100px;
-    margin-top: -50px;
+    margin-top: -20px;
   }
-  .buttonc i {
-    font: 30px/30px Arial, sans-serif;
-    color: #fff;
-  }
+
 </style>

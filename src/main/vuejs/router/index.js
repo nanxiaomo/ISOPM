@@ -9,7 +9,6 @@ import caseTable from 'pages/caseManagement/caseManagement'
 import company from 'pages/companyall/companypage'
 import companyAdd from 'pages/companyall/companyadd'
 import companyCheck from 'pages/companyall/companycheck'
-import staffpost from 'pages/staff/staffpost'
 
 Vue.use(Router)
 
@@ -30,11 +29,6 @@ const router = new Router({
           name: 'staff',
           title: '人员信息管理',
           component: staff
-        },
-        {
-          path: 'staff/add',
-          title: '添加人员信息',
-          component: staffpost
         },
         {
           path: 'case',
