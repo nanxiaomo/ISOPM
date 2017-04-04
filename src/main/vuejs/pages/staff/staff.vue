@@ -26,7 +26,13 @@
             <el-form-item　label=" "label-width='50px'>
               <el-button type="primary" @click="onSubmit">查询</el-button>
             </el-form-item>
-          </el-form>  
+          </el-form> 
+           <a href="" class="buttonc">
+            <div class="create">
+              <i class="iconfont icon-addstaff"></i>
+              <p>添加</p>
+            </div>
+          </a>
         </div>
         <div class="function">
           <ul>
@@ -44,6 +50,7 @@
             </li>
           </ul>
         </div>
+       
       </div>
       <el-table :data="curTableData" height="350" borderstyle="width: 100%" class="stafftable">
         <el-table-column prop="staffId" label="员工工号" width="180">
@@ -164,5 +171,34 @@
   .stafftable {
     margin-top: 10px;
   }
+  .create {
+    display: inline-block;
+    padding: 18px 25px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #20a0ff;
+    text-shadow: 1px 1px 1px rgba(255,255,255, .22);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    color: #fff;
+    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+    -moz-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+    box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
 
+    -webkit-transition: all 0.15s ease;
+    -moz-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+    -ms-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+  }
+  .buttonc {
+    float: right;
+    margin-right: 100px;
+    margin-top: -50px;
+  }
+  .buttonc i {
+    font: 30px/30px Arial, sans-serif;
+    color: #fff;
+  }
 </style>
