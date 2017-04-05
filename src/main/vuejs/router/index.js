@@ -5,7 +5,11 @@ import home from 'pages/home/home'
 import login from 'pages/login/login'
 import staff from 'pages/staff/staff'
 import pindex from 'pages/home/index'
-import caseTable from 'pages/caseManagement/caseManagement'
+import pPManagement from 'pages/personalPManagement/personalPManagement'
+import projectManagement from 'pages/projectManagement/projectmanagement'
+import projectadd from 'pages/projectManagement/projectadd'
+import test from 'pages/projectManagement/test'
+import personalPMView from 'pages/personalPManagement/personalPManagementView'
 import companyAll from 'pages/companyall/companypage'
 import companyAdd from 'pages/companyall/companyadd'
 import companyCheck from 'pages/companyall/companycheck'
@@ -32,10 +36,28 @@ const router = new Router({
           component: staff
         },
         {
-          path: 'case',
-          name: 'caseManagement',
+          path: 'personalPManagement',
+          name: 'personalPManagement',
           title: '人员案件管理',
-          component: caseTable
+          component: pPManagement
+        },
+        {
+          path: 'personalPManagementView',
+          name: 'personalPManagementView',
+          title: '人员案件查看',
+          component: personalPMView
+        },
+        {
+          path: 'projectmanagement',
+          name: 'projectManagement',
+          title: '案件管理',
+          component: projectManagement
+        },
+        {
+          path: 'projectmanagement/projectadd',
+          name: 'projectadd',
+          title: '增加案件',
+          component: projectadd
         },
         {
           path: 'company',
@@ -54,6 +76,12 @@ const router = new Router({
           name: 'companyadd',
           title: '新增公司',
           component: companyAdd
+        },
+        {
+          path: 'test',
+          name: 'test',
+          title: '新增公司',
+          component: test
         },
         {
           path: 'company/check',

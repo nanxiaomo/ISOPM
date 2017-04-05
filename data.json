@@ -122,82 +122,88 @@
     ],
     "company": [
         {
-            "buy_from_company_id": "10-001", 
-            "sale_to_company_id": "20-001", 
-            "company_name": "巨帅气的被子", 
-            "company_tel": "4006666666", 
-            "project_amount": "想要几个有几个", 
-            "company_email": "abc@123.com"
-        }, 
+            "buy_from_company_id": "10-001",
+            "sale_to_company_id": "20-001",
+            "company_name": "巨帅气的被子",
+            "company_tel": "4006666666",
+            "project_amount": "想要几个有几个"
+        },
         {
-            "buy_from_company_id": "10-002", 
-            "sale_to_company_id": "20-002", 
-            "company_name": "巨可爱的被子", 
-            "company_tel": "4008888888", 
+            "buy_from_company_id": "10-002",
+            "sale_to_company_id": "20-002",
+            "company_name": "巨可爱的被子",
+            "company_tel": "4008888888",
             "project_amount": "能要几个有几个"
-        }, 
+        },
         {
-            "buy_from_company_id": "10-003", 
-            "sale_to_company_id": "20-003", 
-            "company_name": "巨搞笑的被子", 
-            "company_tel": "4007777777", 
+            "buy_from_company_id": "10-003",
+            "sale_to_company_id": "20-003",
+            "company_name": "巨搞笑的被子",
+            "company_tel": "4007777777",
             "project_amount": "要几个有几个"
-        }, 
+        },
         {
-            "buy_from_company_id": "10-004", 
-            "sale_to_company_id": "20-004", 
-            "company_name": "巨可爱的被子", 
-            "company_tel": "4008888888", 
+            "buy_from_company_id": "10-004",
+            "sale_to_company_id": "20-004",
+            "company_name": "巨可爱的被子",
+            "company_tel": "4008888888",
             "project_amount": "想要几个有几个"
-        }, 
+        },
         {
-            "buy_from_company_id": "10-005", 
-            "sale_to_company_id": "20-005", 
-            "company_name": "巨可爱的被子", 
-            "company_tel": "4008888888", 
+            "buy_from_company_id": "10-005",
+            "sale_to_company_id": "20-005",
+            "company_name": "巨可爱的被子",
+            "company_tel": "4008888888",
             "project_amount": "想要几个有几个"
-        }, 
+        },
         {
-            "buy_from_company_id": "10-006", 
-            "sale_to_company_id": "20-006", 
-            "company_name": "巨可爱的被子", 
-            "company_tel": "4008888888", 
+            "buy_from_company_id": "10-006",
+            "sale_to_company_id": "20-006",
+            "company_name": "巨可爱的被子",
+            "company_tel": "4008888888",
             "project_amount": "想要几个有几个"
-        }, 
+        },
         {
-            "buy_from_company_id": "10-007", 
-            "sale_to_company_id": "20-007", 
-            "company_name": "巨可爱的被子", 
-            "company_tel": "4008888888", 
+            "buy_from_company_id": "10-007",
+            "sale_to_company_id": "20-007",
+            "company_name": "巨可爱的被子",
+            "company_tel": "4008888888",
             "project_amount": "想要几个有几个"
-        }, 
+        },
         {
-            "buy_from_company_id": "10-008", 
+            "buy_from_company_id": "10-008",
             "sale_to_company_id": "20-008",
-            "company_name": "巨可爱的被子", 
-            "company_tel": "4008888888", 
+            "company_name": "巨可爱的被子",
+            "company_tel": "4008888888",
             "project_amount": "想要几个有几个"
-        }, 
+        },
         {
-            "buy_from_company_id": "10-009", 
-            "sale_to_company_id": "20-009", 
-            "company_name": "巨可爱的被子", 
-            "company_tel": "4008888888", 
+            "buy_from_company_id": "10-009",
+            "sale_to_company_id": "20-009",
+            "company_name": "巨可爱的被子",
+            "company_tel": "4008888888",
             "project_amount": "想要几个有几个"
-        }, 
+        },
         {
-            "buy_from_company_id": "10-010", 
-            "sale_to_company_id": "20-010", 
-            "company_name": "巨可爱的被子", 
-            "company_tel": "4008888888", 
+            "buy_from_company_id": "10-010",
+            "sale_to_company_id": "20-010",
+            "company_name": "巨可爱的被子",
+            "company_tel": "4008888888",
             "project_amount": "想要几个有几个"
-        }, 
+        },
         {
-            "buy_from_company_id": "10-011", 
-            "sale_to_company_id": "20-011", 
-            "company_name": "巨可爱的被子", 
-            "company_tel": "4008888888", 
+            "buy_from_company_id": "10-011",
+            "sale_to_company_id": "20-011",
+            "company_name": "巨可爱的被子",
+            "company_tel": "4008888888",
+            "project_amount": "想要几个有几个"
+        },
+        {
+            "buy_from_company_id": "10-012",
+            "sale_to_company_id": "20-012",
+            "company_name": "巨可爱的被子",
+            "company_tel": "4008888888",
             "project_amount": "想要几个有几个"
         }
-    ]
-}
+      ]
+    }
