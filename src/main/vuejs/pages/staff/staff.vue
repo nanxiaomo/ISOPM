@@ -128,7 +128,7 @@
     -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
     margin-top: 5px;
-    padding: 10px 10px 10px 15px;
+    padding: 10px 10px 15px 15px;
   }
   .search .searchtitle {
     display: block;
