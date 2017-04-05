@@ -22,11 +22,11 @@
     ></el-autocomplete>
   </el-form-item>
   <el-form-item>
-    <el-button type="primary" @click="onSubmit">查询</el-button>
+    <el-button type="primary" @click="onSubmit"><i class ="iconfont icon - icon-search"></i> 查询</el-button>
   </el-form-item>
   </el-col>
   <el-col :span="4">
-    <el-button type="primary" @click="onSubmit">添加新公司信息</el-button>
+    <el-button type="primary"><i class ="iconfont icon - icon-add"></i> 添加新公司信息</el-button>
   </el-col></br>
 </el-form>
 </template>
