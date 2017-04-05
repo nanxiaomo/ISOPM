@@ -6,9 +6,10 @@ import login from 'pages/login/login'
 import staff from 'pages/staff/staff'
 import pindex from 'pages/home/index'
 import caseTable from 'pages/caseManagement/caseManagement'
-import company from 'pages/companyall/companypage'
+import companyAll from 'pages/companyall/companypage'
 import companyAdd from 'pages/companyall/companyadd'
 import companyCheck from 'pages/companyall/companycheck'
+import company from 'pages/companyall/company'
 
 Vue.use(Router)
 

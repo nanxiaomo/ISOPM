@@ -126,7 +126,8 @@
             "sale_to_company_id": "20-001", 
             "company_name": "巨帅气的被子", 
             "company_tel": "4006666666", 
-            "project_amount": "想要几个有几个"
+            "project_amount": "想要几个有几个", 
+            "company_email": "abc@123.com"
         }, 
         {
             "buy_from_company_id": "10-002", 
