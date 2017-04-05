@@ -25,6 +25,7 @@ var app = express()
 
 var appData = require('../data.json')
 var staff = appData.staff
+var company = appData.company
 
 var apiRoutes = express.Router()
 
@@ -32,6 +33,12 @@ apiRoutes.get('/staff', function (req, res) {
   res.json({
     errno: 0,
     data: staff
+  })
+})
+apiRoutes.get('/company', function (req, res) {
+  res.json({
+    errno: 0,
+    data: company
   })
 })
 app.use('/api', apiRoutes)
