@@ -38,9 +38,15 @@ const router = new Router({
         },
         {
           path: 'company',
-          name: 'companyall',
+          name: 'company',
           title: '公司信息管理',
           component: company
+        },
+        {
+          path: 'company1',
+          name: 'companyall',
+          title: '公司信息管理',
+          component: companyAll
         },
         {
           path: 'company/add',

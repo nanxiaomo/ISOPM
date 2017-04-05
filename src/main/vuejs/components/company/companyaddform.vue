@@ -21,9 +21,9 @@
 		  </el-form-item>
 		  </br></br>
 		  <el-form-item>
-		    <el-button type="success" @click="submitForm('ruleForm')">保存</el-button>
-		    <el-button type="warning" @click="resetForm('ruleForm')">重置</el-button>
-		    <el-button type="info" @click="resetForm('ruleForm')">返回</el-button>
+		    <el-button type="success" @click="submitForm('ruleForm')"><i class ="iconfont icon - icon-yesdanchuang"></i> 确定</el-button>
+		    <el-button type="warning" @click="resetForm('ruleForm')"><i class ="iconfont icon - icon-loop"></i> 重置</el-button>
+		    <el-button type="info" onclick="history.back(-1)"><i class ="iconfont icon - icon-canceldanchuang"></i> 取消</el-button>
 		  </el-form-item>
 		</el-form>
 	</el-col>
