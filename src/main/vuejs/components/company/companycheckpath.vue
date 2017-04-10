@@ -1,17 +1,27 @@
 <template>
   <div>
-    <el-col :span="20">
-    <el-breadcrumb separator="/">
-      <el-breadcrumb-item :to="{ path: '/' }" class="path"><i class ="iconfont icon - icon-homepage"></i>首页</el-breadcrumb-item>
-      <el-breadcrumb-item :to="{ path: '/company' }" class="path">公司信息管理</el-breadcrumb-item>
-      <el-breadcrumb-item class="path">查看公司信息</el-breadcrumb-item>
-    </el-breadcrumb>
-    </el-col></br></br>
+    <breadcrumb>
+      <breadcrumbitem>
+        <router-link to="/" exact><i class="iconfont icon-homepage"></i> 主页</router-link>
+      </breadcrumbitem>
+      <breadcrumbitem>
+        <router-link to="../company" exact>公司信息管理</router-link>
+      </breadcrumbitem>
+      <breadcrumbitem label="查看公司信息"></breadcrumbitem>
+    </breadcrumb>
   </div>
 </template>
 
-<style type="text/css">
-  .path {
-    font-size: 20px;
+<script type="text/javascript">
+  import { breadcrumb, breadcrumbitem } from 'components/breadcrumb'
+  export default {
+    components: {
+      breadcrumb,
+      breadcrumbitem
+    }
   }
+</script>
+
+<style type="text/css">
+
 </style>

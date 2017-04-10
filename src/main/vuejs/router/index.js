@@ -13,8 +13,11 @@ import personalPMView from 'pages/personalPManagement/personalPManagementView'
 import companyAll from 'pages/companyall/companypage'
 import companyAdd from 'pages/companyall/companyadd'
 import companyCheck from 'pages/companyall/companycheck'
+import companyUpdate from 'pages/companyall/companyupdate'
 import company from 'pages/companyall/company'
-
+import addCompany from 'pages/companyall/addcompany'
+import checkCompany from 'pages/companyall/checkcompany'
+import updateCompany from 'pages/companyall/updatecompany'
 Vue.use(Router)
 
 const router = new Router({
@@ -69,10 +72,16 @@ const router = new Router({
           path: 'company1',
           name: 'companyall',
           title: '公司信息管理',
-          component: companyAll
+          component: companyAll   // 3个组件组成与上一个相同的页面，用于尝试数据传输成功与否
         },
         {
           path: 'company/add',
+          name: 'addompany',
+          title: '新增公司',
+          component: addCompany
+        },
+        {
+          path: 'company/add1',
           name: 'companyadd',
           title: '新增公司',
           component: companyAdd
@@ -85,9 +94,27 @@ const router = new Router({
         },
         {
           path: 'company/check',
+          name: 'checkcompany',
+          title: '查看公司',
+          component: checkCompany
+        },
+        {
+          path: 'company/check1',
           name: 'companycheck',
           title: '查看公司',
-          component: companyCheck
+          component: companyCheck   // 3个组件组成与上一个相同的页面，用于尝试数据传输成功与否
+        },
+        {
+          path: 'company/update',
+          name: 'updatecompany',
+          title: '查看公司',
+          component: updateCompany
+        },
+        {
+          path: 'company/update1',
+          name: 'companyupdate',
+          title: '查看公司',
+          component: companyUpdate   // 3个组件组成与上一个相同的页面，用于尝试数据传输成功与否
         }
       ]
     },
