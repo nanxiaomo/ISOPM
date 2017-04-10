@@ -13,15 +13,15 @@ import java.util.List;
 /**
  * Created by ZhenYang on 2017/02/19.
  */
-@RequestMapping("/staff")
+@RequestMapping("/api/staff")
 @RestController
 public class StaffApi {
     @Autowired
     StaffService staffService;
 
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping(value = "/",method = RequestMethod.GET)
     public List<Staff> listStaffs() {
-        return staffService.listAll();
+        return staffService.ListPortion();
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)

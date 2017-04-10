@@ -22,7 +22,10 @@ public class StaffService {
     public List<Staff> listAll() {
         return staffDao.listAll();
     }
-
+    
+    public List<Staff> ListPortion() {
+    	return staffDao.ListPortion();
+    }
     public Staff getStaffById(int id) {
         return staffDao.getStaffById(id);
     }
