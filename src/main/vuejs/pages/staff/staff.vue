@@ -68,7 +68,6 @@
 <script type="text/javascript">
   import { breadcrumb, breadcrumbitem } from 'components/breadcrumb'
   import staffpost from 'pages/staff/staffpost'
-  const ERR_OK = 0
   export default {
     components: {
       breadcrumb,
@@ -108,11 +107,9 @@
       }
     },
     created() {
-      let url = '/api/staff'
+      let url = './api/staff/'
       this.$http.get(url).then((response) => {
-        if (response.body.errno === ERR_OK) {
-          this.stafftable = response.body.data
-        }
+        this.stafftable = response.data
       }, (response) => {
         console.log('error')
       })

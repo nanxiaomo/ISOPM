@@ -62,7 +62,7 @@
       </el-form>
     <div slot="footer" class="dialog-footer">
       <el-button @click="display">取 消</el-button>
-      <el-button type="primary" @click="display">确 定</el-button>
+      <el-button type="primary" @click="createstaff">确 定</el-button>
     </div>
   </el-dialog>
 </template>
@@ -113,7 +113,7 @@
             { required: true, message: '请填写员工所属公司', trigger: 'blur' }
           ],
           entrytime: [
-            { required: true, message: '请选择日期', trigger: 'blur' }
+            { type: 'date', required: true, message: '请选择日期', trigger: 'change' }
           ]
         },
         // 选择日期的范围
@@ -160,6 +160,17 @@
       },
       handlePreview(file) {
         console.log(file)
+      },
+      createstaff() {
+        console.log('lallal')
+        let url = '/api/staff'
+        this.$http.post(url, this.form)
+        .then((response) => {
+          this.$set('form', {})
+        }, (response) => {
+          console.log('error')
+        })
+        this.show = false
       }
     }
   }
