@@ -15,19 +15,25 @@
         <div class="condition">
           <el-form :inline="true" :model="companytable" class="conditionform">
             <el-form-item label="公司名称">
-              <el-select v-model="companytable.company_name" placeholder="请选择">
+              <el-select v-model="value" clearable placeholder="请选择">
                 <el-option label="上海" value="shanghai"></el-option>
                 <el-option label="北京" value="beijing"></el-option>
+                <el-option
+                  v-for="item in options"
+                  :label="item.label"
+                  :value="item.value">
+                </el-option>
               </el-select>
             </el-form-item>
             <el-form-item label=" "label-width='50px'>
-              <el-autocomplete v-model="companytable.buy_from_company_id" placeholder="公司名称/公司编号" style="width: 300px;"></el-autocomplete>
+              <el-input v-model="companytable.input" placeholder="公司名称/公司编号" style="width: 300px;" type="text"></el-input>
             </el-form-item>
             <el-form-item　label=" "label-width='10px'>
               <el-button type="primary" @click="onSubmit"><i class ="iconfont icon - icon-search"></i> 查询</el-button>
             </el-form-item>
             <el-form-item　label=" "label-width='50px'>
-              <el-button type="primary"><i class ="iconfont icon - icon-add"></i> 添加新公司信息</el-button>
+              <el-button type="primary" v-on:click="addpage">
+              <i class ="iconfont icon - icon-add"></i> 添加新公司信息</el-button>
             </el-form-item>
           </el-form>  
         </div>
@@ -57,8 +63,8 @@
         <el-table-column prop="project_amount" label="项目个数"> </el-table-column>
         <el-table-column label="操作">
           <template scope="scope">
-            <el-button @click="handleClick" type="text" size="small">查看</el-button>
-            <el-button type="text" size="small">编辑</el-button>
+            <el-button v-on:click="checkpage" type="text" size="small">查看</el-button>
+            <el-button v-on:click="updatepage" type="text" size="small">编辑</el-button>
           </template>
         </el-table-column>
       </el-table>
@@ -85,15 +91,41 @@
     },
     data() {
       return {
+        input: '',
         companytable: [],
         internalPageSize: 10, // 每页数据个数
-        currentPage: 1        // 当前页数
-
+        currentPage: 1,        // 当前页数
+        options: [{
+          value: '选项1',
+          label: '黄金糕'
+        }, {
+          value: '选项2',
+          label: '双皮奶'
+        }, {
+          value: '选项3',
+          label: '蚵仔煎'
+        }, {
+          value: '选项4',
+          label: '龙须面'
+        }, {
+          value: '选项5',
+          label: '北京烤鸭'
+        }],
+        value: ''
       }
     },
     methods: {
       onSubmit() {
         console.log('submit!')
+      },
+      addpage() {
+        window.location('#/company/add')
+      },
+      checkpage() {
+        window.location('#/company/check')
+      },
+      updatepage() {
+        window.location('#/company/update')
       },
       handleSizeChange(val) {           // element 分页自带方法 获取每一页数据数
         this.internalPageSize = val
