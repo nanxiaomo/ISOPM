@@ -1,16 +1,31 @@
 package jp.co.ucl.ISOPM.dao;
 
 import jp.co.ucl.ISOPM.entity.Staff;
-import org.apache.ibatis.annotations.*;
+import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Options;
+import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.ResultMap;
+import org.apache.ibatis.annotations.Results;
+import org.apache.ibatis.annotations.Result;
+import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 
 import java.util.List;
 
 /**
- * Created by ZhenYang on 2017/02/19.
+ * 人员管理dao
+ * 顺序: 增删改查
+ * 作者:王菲
  */
 @Mapper
 public interface StaffDao {
-    @Results(id = "staffResult", value = {
+	@Insert("INSERT INTO gad_personal_information(staff_name, sex, birthday, staff_tel, nationality, staff_mail, staff_address, company, department, entry_time) "
+			+ "VALUES (#{staff.staffName},#{staff.sex},#{staff.birthday},#{staff.staffTel},#{staff.nationality},#{staff.staffMail},#{staff.staffAddress},#{staff.company},#{staff.department},#{staff.entryTime})")
+	@Options(useGeneratedKeys = true, keyProperty = "staff.staffId")
+	int addStaff(@Param("staff") Staff staff);
+   
+	@Results(id = "staffResult", value = {
             @Result(property = "staffId", column = "staff_id", id = true),
             @Result(property = "staffName", column = "staff_name"),
             @Result(property = "sex", column = "sex"),
@@ -47,12 +62,8 @@ public interface StaffDao {
             @Result(property = "deletedAt", column = "deleted_at"),
             
     })
-    
-    
+  
     @Select("SELECT * FROM gad_personal_information WHERE staff_id=#{id}")
     Staff getStaffById(@Param("id") int id);
     
-    @Insert("Insert INTO gad_personal_information(school,department,classRoom,course,request,plan,test,urls,email,status) VALUES(#{course.school},#{course.department},#{course.classRoom},#{course.course},#{course.request},#{course.plan},#{course.test},#{course.urls},#{course.email},#{course.status})")
-	@Options(useGeneratedKeys = true, keyProperty = "course.id")
-	int addCourse(@Param("course") Course course);
 }
