@@ -52,7 +52,5 @@ public interface StaffDao {
     @Select("SELECT * FROM gad_personal_information WHERE staff_id=#{id}")
     Staff getStaffById(@Param("id") int id);
     
-    @Insert("Insert INTO gad_personal_information(school,department,classRoom,course,request,plan,test,urls,email,status) VALUES(#{course.school},#{course.department},#{course.classRoom},#{course.course},#{course.request},#{course.plan},#{course.test},#{course.urls},#{course.email},#{course.status})")
-	@Options(useGeneratedKeys = true, keyProperty = "course.id")
-	int addCourse(@Param("course") Course course);
+   
 }
