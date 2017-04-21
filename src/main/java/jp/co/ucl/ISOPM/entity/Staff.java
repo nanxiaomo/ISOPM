@@ -63,13 +63,7 @@ public class Staff extends BaseEntity {
 		this.sex = sex;
 	}
 
-	public Date getBirthday() {
-		return birthday;
-	}
-
-	public void setBirthday(Date birthday) {
-		this.birthday = birthday;
-	}
+	
 
 	public String getStaffTel() {
 		return staffTel;
@@ -119,16 +113,42 @@ public class Staff extends BaseEntity {
 		this.department = department;
 	}
 
+	
+//
+//	public String getBirthday() {
+//		return birthday;
+//	}
+//
+//	public void setBirthday(String birthday) {
+//		this.birthday = birthday;
+//	}
+//
+//	public String getEntryTime() {
+//		return entryTime;
+//	}
+//
+//	public void setEntryTime(String entryTime) {
+//		this.entryTime = entryTime;
+//	}
+
+	public String getProfileUrl() {
+		return profileUrl;
+	}
+
+	public Date getBirthday() {
+		return birthday;
+	}
+
+	public void setBirthday(Date birthday) {
+		this.birthday = birthday;
+	}
+
 	public Date getEntryTime() {
 		return entryTime;
 	}
 
 	public void setEntryTime(Date entryTime) {
 		this.entryTime = entryTime;
-	}
-
-	public String getProfileUrl() {
-		return profileUrl;
 	}
 
 	public void setProfileUrl(String profileUrl) {
@@ -146,22 +166,6 @@ public class Staff extends BaseEntity {
 		
 	}
 
-	public Staff(Integer staffId, String staffName,  String sex, Date birthday, String staffTel, String nationality,
-			String staffMail, String staffAddress,  String company, String department, String profileUrl,String avatarUrl) {
-		super();
-		this.staffId = staffId;
-		this.staffName = staffName;
-		this.sex = sex;
-		this.birthday = birthday;
-		this.staffTel = staffTel;
-		this.nationality =nationality;
-		this.staffMail = staffMail;
-		this.staffAddress = staffAddress;
-		this.company = company;
-		this.department = department;
-		this.profileUrl = profileUrl;
-		this.avatarUrl = avatarUrl;
-	}  
 	
 
 }

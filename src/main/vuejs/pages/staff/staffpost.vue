@@ -162,8 +162,8 @@
         console.log(file)
       },
       createstaff() {
-        console.log('lallal')
-        let url = '/api/staff'
+        console.log('sublime')
+        let url = './api/staff/create'
         this.$http.post(url, this.form)
         .then((response) => {
           this.$set('form', {})
