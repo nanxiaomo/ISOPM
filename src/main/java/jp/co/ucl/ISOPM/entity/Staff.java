@@ -12,7 +12,7 @@ import java.util.Date;
  */
 public class Staff extends BaseEntity {
 
-    private String staffId;
+    private Integer staffId;
 
     private String staffName;
 
@@ -38,11 +38,12 @@ public class Staff extends BaseEntity {
     
     private String avatarUrl;
 
-	public String getStaffId() {
+	
+	public Integer getStaffId() {
 		return staffId;
 	}
 
-	public void setStaffId(String staffId) {
+	public void setStaffId(Integer staffId) {
 		this.staffId = staffId;
 	}
 
@@ -62,13 +63,7 @@ public class Staff extends BaseEntity {
 		this.sex = sex;
 	}
 
-	public Date getBirthday() {
-		return birthday;
-	}
-
-	public void setBirthday(Date birthday) {
-		this.birthday = birthday;
-	}
+	
 
 	public String getStaffTel() {
 		return staffTel;
@@ -118,16 +113,42 @@ public class Staff extends BaseEntity {
 		this.department = department;
 	}
 
+	
+//
+//	public String getBirthday() {
+//		return birthday;
+//	}
+//
+//	public void setBirthday(String birthday) {
+//		this.birthday = birthday;
+//	}
+//
+//	public String getEntryTime() {
+//		return entryTime;
+//	}
+//
+//	public void setEntryTime(String entryTime) {
+//		this.entryTime = entryTime;
+//	}
+
+	public String getProfileUrl() {
+		return profileUrl;
+	}
+
+	public Date getBirthday() {
+		return birthday;
+	}
+
+	public void setBirthday(Date birthday) {
+		this.birthday = birthday;
+	}
+
 	public Date getEntryTime() {
 		return entryTime;
 	}
 
 	public void setEntryTime(Date entryTime) {
 		this.entryTime = entryTime;
-	}
-
-	public String getProfileUrl() {
-		return profileUrl;
 	}
 
 	public void setProfileUrl(String profileUrl) {
@@ -140,6 +161,9 @@ public class Staff extends BaseEntity {
 
 	public void setAvatarUrl(String avatarUrl) {
 		this.avatarUrl = avatarUrl;
+	}
+    public Staff() {
+		
 	}
 
 	

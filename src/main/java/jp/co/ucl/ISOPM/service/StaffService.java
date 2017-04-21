@@ -5,6 +5,7 @@ import jp.co.ucl.ISOPM.entity.Staff;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+
 import java.util.List;
 
 /**
@@ -14,11 +15,10 @@ import java.util.List;
 public class StaffService {
     @Autowired
     StaffDao staffDao;
-
-    /**
-     * list all staff
-     * @return
-     */
+    
+    public int createStaff(Staff staff){
+		return staffDao.addStaff(staff);
+	}
     public List<Staff> listAll() {
         return staffDao.listAll();
     }
