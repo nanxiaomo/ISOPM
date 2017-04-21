@@ -67,4 +67,5 @@ public interface StaffDao {
     @Select("SELECT * FROM gad_personal_information WHERE staff_id=#{id}")
     Staff getStaffById(@Param("id") int id);
     
+
 }

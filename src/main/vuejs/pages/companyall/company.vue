@@ -83,7 +83,7 @@
 
 <script type="text/javascript">
   import { breadcrumb, breadcrumbitem } from 'components/breadcrumb'
-  const ERR_OK = 0
+//  const ERR_OK = 0
   export default {
     components: {
       breadcrumb,
@@ -146,11 +146,12 @@
       }
     },
     created() {
-      let url = '/api/company'
+      let url = './api/company/'
       this.$http.get(url).then((response) => {
-        if (response.body.errno === ERR_OK) {
-          this.companytable = response.body.data
-        }
+//        if (response.body.errno === ERR_OK) {
+//          this.companytable = response.body.data
+        this.companytable = response.data
+//        }
       }, (response) => {
         console.log('error')
       })

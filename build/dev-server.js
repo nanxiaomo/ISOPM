@@ -21,8 +21,7 @@ var autoOpenBrowser = !!config.dev.autoOpenBrowser
 var proxyTable = config.dev.proxyTable
 
 var app = express()
-/* 自己添加本地路由 */
-
+/* 自己添加本地路由 
 var appData = require('../data.json')
 var staff = appData.staff
 var company = appData.company
@@ -42,6 +41,7 @@ apiRoutes.get('/company', function (req, res) {
   })
 })
 app.use('/api', apiRoutes)
+*/
 
 var compiler = webpack(webpackConfig)
 
